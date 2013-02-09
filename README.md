@@ -20,3 +20,12 @@ We recommend you not do this unless you have a really good reason to do so. We f
 reason (the only one we've come across so far):
 Having the request in threadlocals is the core piece that allowed us to build a true multi-tenant system on top of django where the site is resolved dynamically based on the current host,
 and  objects are filtered based on the current host. With the current version of django, this is nearly impossible to do without the request in threadlocals.  This was a very significant and advanced undertaking, but we're happy with the results.
+
+
+Tests
+-----
+
+To run tests:
+
+python tester/manage.py test
+
